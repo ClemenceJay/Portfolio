@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clémence JAY - Portfolio</title>
+        <link rel="stylesheet" href="style-LightMode.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#language">Compétences</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="titre">
+                <h1>Clémence JAY</h1>
+                <p id="subtitle">Portfolio & CV</p>
+                <img id="photo" src="/ressources/ProfilePictureTest.png" alt="photo de Clémence JAY">
+            </div>
+            <div id="about" class="part">
+                <h2>A propos de moi</h2>
+                <div class="pAbout">
+                    <p id="paragOne">Anciennement dans la recherche pharmaceutique comme Attachée de Recherche Clinique, j'ai éffectué début 2024
+                        une reconversion vers le Développement Web.</p>
+                    <p id="paragTwo">Ayant toujours aimé l'informatique et les énigmes logiques, je m'épanouie désormais plainement dans la conception de site web en tout genre.</p>
+                    <p id="paragThree">Après avoir débuté ma reconversion en autodidacte avec la formation de Développeur Full-Stack de Codecademy.com,
+                        j'entame une formation en alternance chez IT-Akademy.<br>
+                        Cette formation de 2 ans va ainsi me permettre d'approfondir mes connaissances théoriques via les semaines de formation, 
+                        ainsi que développer mes compétences pratiques via l'expérience que je vais acquerir durant les semaines en entreprises.</p>
+                </div>
+            </div>
+            <div id="language" class="part">
+                <h2>Compétences</h2>
+                <ul>
+                    <li><img src="/ressources/HTML5_logo.png" alt="HTML"></li>
+                    <li><img src="/ressources/CSS3_logo.png" alt="CSS"></li>
+                    <li><img src="/ressources/JS_logo.png" alt="Javascript"></li>
+                    <li><img src="/ressources/gitHub_logo.png" alt="GithHub"></li>
+                </ul>
+            </div>
+            <div id="formation" class="part">
+                <h2>Formation</h2>
+                <div class="listeFormation">
+                <!--Ajouter des cartes pour chaque formation-->
+
+                    <div class="cardClass" id="codecademy">
+                        <p class="nomFormation">AUTOFORMATION: FULL STACK ENGINEER</p>
+                        <p class="ecole">Codecademy.com  - en autodidacte</p>
+                        <p class="cours">Fondamentaux du développement web <i>(HTML, CSS, Responsive Design)</i>
+                        - Construire des sites web interactif <i>(Javascript, Algorithmie, Git/GitHub, Accesssibilité)</i>
+                        - Front-end <i>(React)</i> et Back-end <i>(Express.js, PostgreSQL)</i>
+                        <br>Formation en Anglais</p>
+                    </div>
+                    <div class="cardClass" id="masterIS">
+                        <p class="nomFormation">MASTER INGENIERIE DE LA SANTE: RECHERCHE CLINIQUE </p>
+                        <p class="ecole">Université Grenoble Alpes</p>
+                        <p class="cours">Methodologie en Recherche Clinique - Phases précoces des essais cliniques
+                            - Conduite de projets, Evaluation médico-économique - Management de la qualité - Biostatistiques</p>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio" class="part">
+                <h2>Portfolio</h2>
+                <div class="cardProject" id="fraudoscope">
+                    <p class="nomProject">---- FRAUDOSCOPE ----</p>
+                    <p class="description">Le fraudoscope génère un message du type horoscope a partir de differentes parties choisies aléatoirement.</p>
+                    <details>
+                        <summary>Afficher l'aperçu</summary>
+                        <div>
+                            <img src="/ressources/fraudoscope-blue.png" alt="screenshot page d'accueil fraudoscope">
+                            <img src="/ressources/fraudoscope-purple.png" alt="screenshot page de résultat fraudoscope">
+                        </div>
+                    </details>
+                    <button class="gitHub"> <a href="https://github.com/OperonLact/Fraudoscope">Lien GitHub du projet </a></button>
+                </div>
+
+            </div>
+        </main>
+    </body>
+
+</html>
