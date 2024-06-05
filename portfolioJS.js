@@ -11,3 +11,18 @@ let closeContact = function(){
     document.getElementById('modal').style.display = 'none';
 }
 boutonClose.onclick = closeContact;
+
+//Switcher entre Dark Mode - Light Mode
+let boutonStyle = document.getElementById('styleButton');
+let changeStyle = function(){
+    document.body.classList.toggle("darkMode");
+    if (document.getElementById('styleButton').innerHTML === "Mode sombre") {
+        document.getElementById('styleButton').innerHTML = "Mode clair";
+    } else {
+        document.getElementById('styleButton').innerHTML = "Mode sombre";
+    };
+}
+boutonStyle.onclick = changeStyle;
+ 
+
+
