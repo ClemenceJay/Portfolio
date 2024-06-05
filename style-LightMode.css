@@ -55,6 +55,48 @@ nav ul{
     padding-right: 4%;
 }
 
+#contact{
+    border: solid 1px;
+    border-radius: 30%;
+    padding: 5px;
+}
+
+    /*Popup contact*/
+.modal {
+    display: none;
+}
+
+.modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0, 0, 0, .25 );
+}
+
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    right: 30%;
+    min-width: 250px;
+    padding: 25px;
+    background: white;
+    border: solid;
+}
+
+.modal-container li{
+    display: block;
+    margin-left: -40px;
+}
+
+#modal-close{
+	position: absolute;
+	right: 5%;
+	top:5%;
+	font-size: 20px;
+}
 
     /*Titre*/
 #titre{
@@ -211,14 +253,12 @@ details{
         padding-left: 0;
     }
 
-    nav li{
-        flex-basis: 40%;
-
+    h1{
+        font-size: 4.5rem;
     }
 
     #photo{
         float: none;
-
         margin-top: 0;
     }
 
