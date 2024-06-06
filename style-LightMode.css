@@ -28,7 +28,7 @@ li{
 main{
     top: 60px;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
 }
 
     /* Structure générale des parties*/
@@ -53,6 +53,9 @@ nav{
     background-color: white;
     border-bottom: solid 1px rgb(81, 80, 80);
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .darkMode nav{
@@ -60,13 +63,33 @@ nav{
     border-bottom: solid 1px rgb(155, 155, 155);
 }
 
+nav button{
+    border: none;
+    background-color:white;
+    font-family: rubik;
+    font-weight: 400;
+}
+
+.darkMode nav button{
+    background-color: rgb(86, 86, 86);
+    color:  rgb(218, 218, 218);
+}
+
+nav button:hover{
+    font-weight: 400;
+    cursor: pointer;
+}
+
 nav ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 15px 20px;
-    padding-top: 4px;
-    padding-right: 4%;
+    padding-left: 0;
+}
+
+nav a{
+    font-weight: 200;
 }
 
     /*Popup contact*/
@@ -264,47 +287,9 @@ details{
   }
 }
 
-/*Footer*/
-
-footer{
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.893);
-    border-top: solid 1px rgb(81, 80, 80);
-    z-index: 1;
-}
-
-.darkMode footer{
-    background-color: rgb(86, 86, 86);
-    border-bottom: solid 1px rgb(155, 155, 155);
-}
-
-footer ul{
-    display: flex;
-    justify-content: space-around;
-}
-
-footer button{
-    border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    background-color: rgba(234, 233, 233, 0.84);
-    font-family: rubik;
-    font-weight: 200;
-}
-
-footer button:hover{
-    font-weight: 400;
-    padding: 2px 5px;
-    border: solid 2px rgb(75, 75, 75);
-    cursor: pointer;
-}
-
 @media only screen and (max-width: 500px) {
     nav ul{
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
         padding-top: 0px;
         padding-left: 0;
