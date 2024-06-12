@@ -26,7 +26,7 @@ li{
 }
 
 main{
-    top: 60px;
+    top: 100px;
     position: relative;
     padding-bottom: 15px;
 }
@@ -39,7 +39,8 @@ main{
 }
 
 .part{
-    margin: 5% 2%;
+    margin: 0 5px;
+    padding-top: 20px;
 }
 
 
@@ -115,15 +116,13 @@ nav a{
     left: 30%;
     min-width: 250px;
     padding: 25px;
-    background: white;
+    backdrop-filter: blur(10px);
     border: solid;
 }
 
 .darkMode .modal-container{
-    background: rgb(81, 81, 81);
     color: rgb(255, 255, 255);
 }
-
 
 .modal-container li{
     display: block;
@@ -146,20 +145,22 @@ h1{
     font-family: 'Josefin Sans';
     font-weight: 100;
     font-size: 5rem;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 #subtitle{
-    margin-top: 0;
-    margin-bottom: 80px;
+    margin: 0;
 }
 
 #photo {
     float: right;
-    width: 280px;
+    width: 230px;
     height: auto;
-    top: 0;
-    margin: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20%;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 5px 5px 0 5px
 }
 
 /* "A propos" */
@@ -176,7 +177,6 @@ h1{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 15px 20px;
-    margin: auto;
     padding-left: 0;
 }
 
@@ -195,10 +195,10 @@ h1{
 .cardClass{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-    padding: 2px 15px;
     font-family: 'Josefin Sans'; 
     flex-basis: 300px;
     flex-grow: 1;
+    padding: 0 10px;
 }
 .darkMode .cardClass{
     box-shadow: rgb(213, 213, 213) 0px 0px 5px 0px, rgb(213, 213, 213) 0px 0px 1px 0px;
@@ -210,7 +210,6 @@ h1{
 
 .ecole{
     font-weight: 300;
-
 }
 
 .cours{
@@ -227,6 +226,14 @@ h1{
  align-items: center;
  text-align: justify;
  font-weight: 300;
+ margin-bottom: 20px;
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+ padding: 5px 10px;
+}
+
+.darkMode .cardProject{
+    box-shadow: rgb(213, 213, 213) 0px 0px 5px 0px, rgb(213, 213, 213) 0px 0px 1px 0px;
 }
 
 .nomProject{
@@ -240,12 +247,15 @@ details{
     font-size: 14px;
 }
 
+details :hover{
+    cursor: pointer;
+}
+
 .cardProject div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px 10px;
-    margin-top: 10px;
 }
 
 .cardProject img{
@@ -261,8 +271,12 @@ details{
     border: solid 1px rgb(133, 144, 148);
     border-radius: 10px;
     background-size: 300%;
-    background-image: linear-gradient(90deg, white 0%, rgb(205, 205, 205) 50%, white 100%);
+    background-image: linear-gradient(90deg, rgb(201, 201, 201) 0%, rgb(255, 255, 255) 50%, rgb(201, 201, 201) 100%);
     animation: AnimateButton 7s ease infinite;
+}
+
+.github{
+    display: inline;
 }
 
 .darkMode .cardProject button{
@@ -287,7 +301,7 @@ details{
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     nav ul{
         justify-content: center;
         text-align: center;

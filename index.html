@@ -34,12 +34,12 @@
             <div id="titre">
                 <h1>Clémence JAY</h1>
                 <p id="subtitle">Portfolio & CV</p>
-                <img id="photo" src="./ressources/ProfilePictureTest.png" alt="photo de Clémence JAY">
+                <img id="photo" src="./ressources/ProfilePicture.png" alt="photo de Clémence JAY">
             </div>
             <div id="about" class="part">
                 <h2>A propos de moi</h2>
                 <div class="pAbout">
-                    <p id="paragOne">Après 5 années dans la recherche pharmaceutique en tant qu'Attachée de Recherche Clinique, j'ai entamé début 2024
+                    <p id="paragOne">Après avoir été diplômée d'un Master 2 en Ingénierie de la Santé et avoir travaillé 5 années dans la recherche pharmaceutique en tant qu'Attachée de Recherche Clinique, j'ai entamé début 2024
                         une reconversion vers le Développement Web.</p>
                     <p id="paragTwo">Ayant toujours aimé l'informatique, les énigmes logiques et l'apprentissage des langues je m'épanouie désormais pleinement dans cet univers que je découvre encore.</p>
                     <p id="paragThree">Après avoir débuté ma reconversion en autodidacte avec la formation de Développeur Full-Stack de Codecademy.com,
@@ -61,10 +61,16 @@
                 <h2>Formation</h2>
                 <div class="listeFormation">
                 <!--Ajouter des cartes pour chaque formation-->
-
+                    <div class="cardClass" id="ITAkademy">
+                        <p class="nomFormation">DEVELOPPEUR WEB FULL-STACK</p>
+                        <p class="ecole">IT-Akademy <br> A venir: Sept 2024 - Sept 2026 </p>
+                        <p class="cours">Intégration Web <i>(HTML, CSS, JS)</i>, Programmation et développement
+                            web <i>(PHP, C, Python, C++, JAVA, NodeJS)</i>, Developpement mobile,
+                            Genie logiciel, Base de données, Gestion de projet</p>
+                    </div>
                     <div class="cardClass" id="codecademy">
-                        <p class="nomFormation">AUTOFORMATION: FULL STACK ENGINEER</p>
-                        <p class="ecole">Codecademy.com  - en autodidacte</p>
+                        <p class="nomFormation">AUTOFORMATION: FULL STACK-ENGINEER</p>
+                        <p class="ecole">Codecademy.com en autodidacte<br> mars 2024 - aujourd'hui</p>
                         <p class="cours">Fondamentaux du développement web <i>(HTML, CSS, Responsive Design)</i>
                         - Construire des sites web interactif <i>(Javascript, Algorithmie, Git/GitHub, Accesssibilité)</i>
                         - Front-end <i>(React)</i> et Back-end <i>(Express.js, PostgreSQL)</i>
@@ -72,7 +78,7 @@
                     </div>
                     <div class="cardClass" id="masterIS">
                         <p class="nomFormation">MASTER INGENIERIE DE LA SANTE: RECHERCHE CLINIQUE </p>
-                        <p class="ecole">Université Grenoble Alpes</p>
+                        <p class="ecole">Université Grenoble Alpes <br> 2018-2020</p>
                         <p class="cours">Methodologie en Recherche Clinique - Phases précoces des essais cliniques
                             - Conduite de projets, Evaluation médico-économique - Management de la qualité - Biostatistiques</p>
                     </div>
@@ -82,15 +88,33 @@
                 <h2>Portfolio</h2>
                 <div class="cardProject" id="fraudoscope">
                     <p class="nomProject">---- FRAUDOSCOPE ----</p>
-                    <p class="description">Le fraudoscope génère un message du type horoscope a partir de differentes parties choisies aléatoirement.</p>
+                    <p class="description">Le fraudoscope génère un message du type horoscope a partir de differentes parties choisies aléatoirement. avec design responsive.<br> Utilisation d'HTML/CSS/JS ainsi que Photoshop pour les images</p>
                     <details>
-                        <summary>Afficher l'aperçu</summary>
+                        <summary>Afficher les images</summary>
                         <div>
                             <img src="./ressources/fraudoscope-blue.png" alt="screenshot page d'accueil fraudoscope">
                             <img src="./ressources/fraudoscope-purple.png" alt="screenshot page de résultat fraudoscope">
                         </div>
                     </details>
-                    <button class="gitHub"> <a href="https://github.com/ClemenceJay/Fraudoscope">Lien GitHub du projet </a></button>
+                    <div class="gitHub">
+                        <button> <a href="https://clemencejay.github.io/Fraudoscope/" target="_blank">Lien GitHub Page </a></button>
+                        <button> <a href="https://github.com/ClemenceJay/Fraudoscope" target="_blank">Lien Repo GitHub</a></button>
+                    </div> 
+                </div>
+                <div class="cardProject" id="DupontBrewery">
+                    <p class="nomProject">---- DUPONT BREWERY ----</p>
+                    <p class="description">Site d'une brasserie fictive avec design responsive.
+                        <br>Utilisation d'HTML/CSS ainsi que Photoshop pour les images</p>
+                    <details>
+                        <summary>Afficher l'aperçu</summary>
+                        <div>
+                            <img src="./ressources/DupontBrewery.png" alt="screenshot page d'accueil fraudoscope">
+                        </div>
+                    </details>
+                    <div class="gitHub">
+                        <button> <a href="https://clemencejay.github.io/DupontBrewery/" target="_blank">Lien GitHub Page </a></button>
+                        <button> <a href="https://github.com/ClemenceJay/DupontBrewery" target="_blank">Lien Repo GitHub</a></button>
+                    </div> 
                 </div>
             </div>
         </main>
