@@ -93,6 +93,13 @@ nav a{
     font-weight: 200;
 }
 
+#contact {
+    margin-left: 10px;
+}
+#styleButton{
+    margin-right: 10px;
+}
+
     /*Popup contact*/
 .modal {
     display: none;
